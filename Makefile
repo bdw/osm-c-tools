@@ -5,9 +5,9 @@ CFLAGS=-O3
 all: $(ALL)
 
 osmconvert: osmconvert.c
-	$(CC) $(CFLAGS) -lz $< -o $@
+	$(CC) $(CFLAGS) $< -o $@ -lz
 
-install:
+install: $(ALL)
 	cp -v $(ALL) $(PREFIX)/bin
 
 clean:
