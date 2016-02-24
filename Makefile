@@ -13,4 +13,9 @@ install: $(ALL)
 clean:
 	rm -vf $(ALL)
 
-.PHONY: all install clean
+update:
+	curl http://m.m.i24.cc/osmconvert.c -o osmconvert.c
+	curl http://m.m.i24.cc/osmupdate.c  -o osmupdate.c
+	curl http://m.m.i24.cc/osmfilter.c  -o osmfilter.c
+
+.PHONY: all install clean update
