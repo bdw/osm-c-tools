@@ -114,7 +114,7 @@ const char* helptext=
 "        which is not entirely excluded because it has some nodes\n"
 "        inside the borders.\n"
 "        This option will ensure that every way stays complete, even\n"
-"        it it intersects the borders. This will result in slower\n"
+"        if it intersects the borders. This will result in slower\n"
 "        processing, and the program will loose its ability to read\n"
 "        from standard input. It is recommended to use .o5m format as\n"
 "        input format to compensate most of the speed disadvantage.\n"
